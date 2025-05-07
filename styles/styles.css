@@ -1,0 +1,171 @@
+body,
+body * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #d8e2c9;
+}
+
+.container {
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  margin-top: 5%;
+  background-color: #f7f8ea;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  padding-top: 20px;
+  align-items: center;
+  margin: auto;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  font-size: 40px;
+  font-weight: bold;
+  color: #262510;
+  align-items: center;
+}
+
+.logo > .drop {
+  font-size: 12px;
+  margin-top: -8px;
+  margin-left: 5px;
+}
+
+.navigation > a {
+  margin: 20px;
+  text-decoration: none;
+  font-size: 17px;
+  color: #6d6e5c;
+}
+
+.navigation > a:nth-child(2) {
+  text-decoration: underline;
+  text-underline-offset: 7px;
+}
+
+.navigation > .arrow {
+  margin-left: -15px;
+}
+
+.user-action > a {
+  margin: 10px;
+  text-decoration: none;
+  font-size: 17px;
+  color: #6d6e5c;
+}
+
+.underline {
+  background-color: #e4e5d7;
+  width: 100%;
+  height: 2px;
+  margin-top: 10px;
+}
+
+.reviews-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
+  margin-top: 40px;
+}
+
+.reviews-section > h1 {
+  margin-bottom: 25px;
+  font-size: 50px;
+}
+
+.review {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ede8d4;
+  width: 90%;
+  border-radius: 10px;
+}
+
+.stars {
+  color: #ec9a1c;
+  margin-bottom: 15px;
+}
+
+.girl {
+  width: 130px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.comment {
+  margin-top: 20px;
+  margin-left: 30px;
+  color: #746e58;
+}
+
+.reviewer-info {
+  display: flex;
+}
+
+.reviewer-info-line {
+  background-color: #8fa67a;
+  width: 3px;
+  height: 30px;
+  margin-top: 10px;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.profession {
+  font-size: 12px;
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    padding: 20px;
+  }
+  .navigation > a {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .user-action {
+    display: flex;
+    flex-direction: column;
+  }
+  .navigation > a {
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 615px) {
+  .user-action {
+    display: flex;
+    flex-direction: column;
+  }
+  .navigation > a {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+  }
+  .navigation > a:nth-child(3),
+  .navigation > a:nth-child(6) {
+    display: none;
+  }
+  .navbar {
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+}

@@ -150,7 +150,7 @@ body {
   }
 }
 
-@media (max-width: 615px) {
+@media (max-width: 620px) {
   .user-action {
     display: flex;
     flex-direction: column;
